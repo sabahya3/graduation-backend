@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const Shema = mongoose.Schema
-const { ObjectId } = mongoose.Schema.Types;
+
 
 
 const securitySchema = new Shema({
@@ -34,9 +34,6 @@ const securitySchema = new Shema({
         type: String,
 
     },
-
-
-
 
 },
 
