@@ -12,6 +12,10 @@ const studentSchema = new Shema({
         type: String,
         reqired: true
     },
+    nameOfMother: {
+        type: String,
+        reqired: true
+    },
     email: {
         type: String,
         required: true,
