@@ -29,7 +29,7 @@ const studentSchema = new Shema({
 
     studentAge: { type: Number, reqired: true },
 
-    gendre: [{ type: String, enum: ['Male', 'Female'] }],
+    gender: [{ type: String, enum: ['Male', 'Female'] }],
 
     grade: { type: ObjectId, ref: 'Grade' },
 

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const  Shema  = mongoose.Schema
+const Shema = mongoose.Schema
 const { ObjectId } = mongoose.Schema.Types;
 
 
@@ -33,7 +33,7 @@ const teacherShema = new Shema({
         type: Boolean,
         default: false
     },
-    gendre: [{ type: String, enum: ['Male', 'Female'] }],
+    gender: [{ type: String, enum: ['Male', 'Female'] }],
 
     materials: [{ name: String }],
 
