@@ -36,4 +36,10 @@ const teacherShema = new Shema({
     },
 
     chats: [{ type: ObjectId, ref: 'Student' }]
-})
+},
+    { timestamps: true })
+
+
+
+
+module.exports = mongoose.model('Teacher', teacherShema);
