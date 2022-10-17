@@ -23,6 +23,10 @@ const securitySchema = new Shema({
         type: String,
 
     },
+    imgUrl: {
+        type: String,
+      
+    },
 
     age: { type: Number, reqired: true },
 

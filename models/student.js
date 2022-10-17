@@ -25,6 +25,10 @@ const studentSchema = new Shema({
         type: String,
         required: true,
     },
+    imgUrl: {
+        type: String,
+      
+    },
 
     familyPhoneNumbers: [{
         type: String,
@@ -36,6 +40,8 @@ const studentSchema = new Shema({
     gender: [{ type: String, enum: ['Male', 'Female'] }],
 
     grade: { type: ObjectId, ref: 'Grade' },
+
+    classId: { type: ObjectId, ref: 'Class' },
 
     accessToken: {
         type: String,

@@ -17,6 +17,10 @@ const teacherShema = new Shema({
         type: String,
         required: true,
     },
+    imgUrl: {
+        type: String,
+      
+    },
     phoneNumber: {
         type: String,
         reqired: true
@@ -48,3 +52,8 @@ const teacherShema = new Shema({
 
 
 module.exports = mongoose.model('Teacher', teacherShema);
+
+
+
+
+
