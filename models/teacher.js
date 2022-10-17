@@ -26,6 +26,9 @@ const teacherShema = new Shema({
     qualification: {
         type: String,
     },
+    role: {
+        type: String,
+    },
     gendre: [{ type: String, enum: ['Male', 'Female'] }],
 
     materials: [{ name: String }],
@@ -34,6 +37,7 @@ const teacherShema = new Shema({
         type: String,
 
     },
+
 
     chats: [{ type: ObjectId, ref: 'Student' }]
 },
