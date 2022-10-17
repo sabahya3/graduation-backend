@@ -29,6 +29,10 @@ const teacherShema = new Shema({
     role: {
         type: String,
     },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
     gendre: [{ type: String, enum: ['Male', 'Female'] }],
 
     materials: [{ name: String }],
