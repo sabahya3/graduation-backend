@@ -3,11 +3,12 @@ const Shema = mongoose.Schema
 const { ObjectId } = mongoose.Schema.Types;
 
 
-const teacherShema = new Shema({
+const securitySchema = new Shema({
     name: {
         type: String,
         reqired: true
     },
+
     email: {
         type: String,
         required: true,
@@ -17,22 +18,17 @@ const teacherShema = new Shema({
         type: String,
         required: true,
     },
+
     phoneNumber: {
         type: String,
-        reqired: true
-    },
-    age: { type: Number, min: 18, max: 60 },
 
-    role: {
-        type: String,
     },
-    isAdmin: {
-        type: Boolean,
-        default: false
-    },
+
+    age: { type: Number, reqired: true },
+
     gender: [{ type: String, enum: ['Male', 'Female'] }],
 
-    subjects: [{ name: String }],
+
 
     accessToken: {
         type: String,
@@ -40,11 +36,13 @@ const teacherShema = new Shema({
     },
 
 
-    chats: [{ type: ObjectId, ref: 'Student' }]
+
+
 },
+
     { timestamps: true })
 
 
 
 
-module.exports = mongoose.model('Teacher', teacherShema);
+module.exports = mongoose.model('Security', securitySchema);
