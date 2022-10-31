@@ -34,7 +34,7 @@ const teacherShema = new Shema({
         type: Boolean,
         default: false
     },
-    gender: [{ type: String, enum: ['Male', 'Female'] }],
+    gender: { type: String, enum: ['Male', 'Female'] },
 
     subjects: [{ name: String }],
 

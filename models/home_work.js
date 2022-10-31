@@ -9,21 +9,25 @@ const homeWorkSchema = new Shema({
         required:true
 
     },
+
+    description: {
+        type:String,
+        required:true
+
+    },
+
     classId: {
         type: ObjectId,
         ref:'Class'
        
     },
 
-    message: String,
-
-    scanLocation: { lat: String, lang: String },
-
-    securityId: {
+    teacherId: {
         type: ObjectId,
-        ref: 'Security'
+        ref:'Teacher'
+       
     },
-
+  
 
 
 },
@@ -35,4 +39,4 @@ const homeWorkSchema = new Shema({
 
 
 
-module.exports = mongoose.model('Attendance', attendanceSchema);
+module.exports = mongoose.model('HomeWork', homeWorkSchema);
